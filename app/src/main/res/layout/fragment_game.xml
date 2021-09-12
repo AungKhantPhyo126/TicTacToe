@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/stick1"
+        android:layout_width="10dp"
+        android:layout_height="450dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stick2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/stick2"
+        android:layout_width="10dp"
+        android:layout_height="450dp"
+        android:background="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stick1"
+        app:layout_constraintTop_toTopOf="@+id/stick1" />
+
+    <View
+        android:id="@+id/stick3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/stick1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stick4" />
+
+    <View
+        android:id="@+id/stick4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/stick3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stick1"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card00"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/stick4"
+        app:layout_constraintEnd_toStartOf="@+id/stick1"
+        app:layout_constraintStart_toStartOf="@id/stick4"
+        app:layout_constraintTop_toTopOf="@id/stick1">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/stick4"
+        app:layout_constraintEnd_toStartOf="@+id/stick2"
+        app:layout_constraintStart_toEndOf="@id/stick1"
+        app:layout_constraintTop_toTopOf="@id/stick1">
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/stick4"
+        app:layout_constraintEnd_toEndOf="@+id/stick4"
+        app:layout_constraintStart_toEndOf="@id/stick2"
+        app:layout_constraintTop_toTopOf="@id/stick1">
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/stick3"
+        app:layout_constraintEnd_toStartOf="@+id/stick1"
+        app:layout_constraintStart_toStartOf="@id/stick4"
+        app:layout_constraintTop_toBottomOf="@id/stick4">
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/stick3"
+        app:layout_constraintEnd_toStartOf="@+id/stick2"
+        app:layout_constraintStart_toEndOf="@id/stick1"
+        app:layout_constraintTop_toBottomOf="@id/stick4">
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintStart_toEndOf="@id/stick2"
+        app:layout_constraintEnd_toEndOf="@id/stick4"
+        app:layout_constraintTop_toBottomOf="@id/stick4"
+        app:layout_constraintBottom_toTopOf="@id/stick3">
+
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintStart_toStartOf="@id/stick3"
+        app:layout_constraintEnd_toStartOf="@id/stick1"
+        app:layout_constraintTop_toBottomOf="@id/stick3"
+        app:layout_constraintBottom_toBottomOf="@id/stick1">
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintStart_toEndOf="@id/stick1"
+        app:layout_constraintEnd_toStartOf="@id/stick2"
+        app:layout_constraintTop_toBottomOf="@id/stick3"
+        app:layout_constraintBottom_toBottomOf="@id/stick1">
+
+    </com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/card22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/teal_200"
+        tools:text="o"
+        android:textColor="#15706F"
+        android:textSize="90sp"
+        app:layout_constraintStart_toEndOf="@id/stick2"
+        app:layout_constraintEnd_toEndOf="@id/stick3"
+        app:layout_constraintTop_toBottomOf="@id/stick3"
+        app:layout_constraintBottom_toBottomOf="@id/stick1">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart Game"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card21" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="70sp"
+        android:visibility="invisible"/>
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gp_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="stick1,stick2,stick3,stick4,card00,card01,card02,card10,card11,card12,card20,card21,card22"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
